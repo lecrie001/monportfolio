@@ -208,7 +208,7 @@ header nav {
     max-width: 12cm;
     text-align: center;
     position: relative;
-    top: 80px;
+    top: 50px;
     left: 120px;
 
  }
@@ -410,5 +410,6 @@ mark{
    color: var(--secondary-color);
    background-color: #ffffff;
 }
+
 
 
