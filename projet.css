@@ -401,7 +401,7 @@ padding-left: 10px;
 }
 #nt{
   position: relative;
-  left: 66rem;
+  left: 64rem;
 }
 a:hover{
   color: var(--secondary-color);
@@ -410,6 +410,7 @@ mark{
    color: var(--secondary-color);
    background-color: #ffffff;
 }
+
 
 
 
