@@ -7,7 +7,7 @@
 .poppins-thin {
   font-family: 'Poppins';
   font-weight: 100;
-  font-style: normal;
+  font-style: norrmal;
 }
 
 .poppins-extralight {
@@ -213,7 +213,7 @@ header nav {
 
  }
  .moi>p{
-     font-size: 1.3rem;
+     font-size: 1.4rem;
  }
   
  #section2{
@@ -324,7 +324,7 @@ header nav {
 
 }
 #section4{
-  height: 100vh;
+  height: 110vh;
    background-color: var(--primary-color);
 }
 .cont3{
@@ -410,6 +410,7 @@ mark{
    color: var(--secondary-color);
    background-color: #ffffff;
 }
+
 
 
 
