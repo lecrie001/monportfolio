@@ -213,7 +213,7 @@ header nav {
 
  }
  .moi>p{
-     font-size: 1.8rem;
+     font-size: 1.4rem;
  }
   
  #section2{
@@ -410,3 +410,4 @@ mark{
    color: var(--secondary-color);
    background-color: #ffffff;
 }
+
