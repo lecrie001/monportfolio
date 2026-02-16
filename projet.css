@@ -3,11 +3,12 @@
     padding: 0;
      box-sizing: border-box;
       font-family: "poppins", sans-serif;
+       
 }
 .poppins-thin {
   font-family: 'Poppins';
   font-weight: 100;
-  font-style: norrmal;
+  font-style: normal;
 }
 
 .poppins-extralight {
@@ -119,39 +120,45 @@
 }
 header nav {
      display: flex;
-      flex-direction: row;
-       gap: 30rem;
-    height: 2.9cm;
+    flex-direction: row;
+    height: 2cm;
     width: 100%;
     background-color: var(--primary-color);
     box-shadow: 20px -30px 22px rgb(255, 255,255,0.3);
-    justify-content: space-around;
-    align-items: center;
-     margin-bottom: 20px;
-}
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+   
+}    
+   
 #logo{
     color:aliceblue ; 
     font-weight: bolder;
-     font-size: 1.4rem;
+     font-size: 1.5rem;
      text-transform: uppercase;
       display: flex ;
       gap: 0.8rem;
       letter-spacing: 0.6px;
+     
+      position: relative ; 
+      padding: 20px;
 
 }
  #logo>div{
     color:var(--secondary-color)
  }
  .menu1 ul{
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
- }
+  display: flex;
+  gap: 1.6rem ;
+  padding: 20px;
+}
+
+ 
   .menu1 ul li,a {
     text-decoration: none;
     list-style: none;
      color: antiquewhite;
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       transition:all 0.4s ease ; 
   }
    #section0{
@@ -163,6 +170,7 @@ header nav {
        align-items: center;
         gap: 3rem;
         background-color:white ;
+        
    }
    #section0 .ma_des{
      max-width: 20cm;
@@ -182,14 +190,25 @@ header nav {
         border: none;
          border-radius: 12px;
          transition: none 0.6s ease;
+
         
       }
+      .cont_moi{
+        display: flex;
+        justify-content: space-evenly;
+      }
       .tof img{
-         height: 350px;
-         width: 400px;
+         max-height: 350px;
+         max-width: 400px;
           object-fit: cover;
            position: relative;
            top: 2cm;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: centers;
       }
       .Apropos,  #section2>h2{
         text-align: center;
@@ -203,17 +222,21 @@ header nav {
         height: 100vh;
     
       }
+      #i2_0 h2{
+        font-size: 1.9rem;
+        padding-bottom: 25px;
+      }
       
  .moi{
     max-width: 12cm;
     text-align: center;
-    position: relative;
-    top: 50px;
-    left: 120px;
+    
+     
+  
 
  }
  .moi>p{
-     font-size: 1.4rem;
+     font-size: 1.6rem;
  }
   
  #section2{
@@ -225,6 +248,8 @@ header nav {
           gap:2rem;
           justify-content: space-around;
           align-items: center;
+           flex-wrap: wrap;
+           transform: skewY(-50px);
           
      }
      .art1{
@@ -242,19 +267,18 @@ header nav {
             justify-content: center;
             position: relative;
             top: 80px;
-            transition: all 0.4s ease;
-     }
-        
-        
+            transform: skewY(50px)
+            
+           }
      .bouton2{
         position: relative;
         top: 60px ; 
         background-color: var(--secondary-color);
         border: none;
-        padding: 15px 30px 15px 30px ;
+        padding: 10px 30px 10px 30px ;
         color: var(--primary-color);
         border-radius: 15px;
-        transition: none 0.6s ease;
+        transition: all 0.6s ease;
 
      }
      .bouton1:hover,.bouton2:hover{
@@ -280,6 +304,7 @@ header nav {
           box-shadow: 10px 20px 25px rgb(255, 255,255,0.3);
           border-radius: 8px;
           padding: 2rem;
+           
       
         }
      .cap{
@@ -324,8 +349,14 @@ header nav {
 
 }
 #section4{
-  height: 110vh;
+  height: 120vh;
    background-color: var(--primary-color);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   gap: 3rem;
 }
 .cont3{
   display: flex;
@@ -371,19 +402,16 @@ header nav {
   width: 15.6cm;
    height:.8cm ; 
    border-radius:5px ; 
-  outline: none;
+   outline: none;
    border: 1px solid var(--secondary-color);
 }
 
 .cont_moi{
   display: flex;
-   gap: 20rem;
-    
-   
 }
 .ma_tof{
   position: relative;
-  left:80px ; 
+  
   border-radius: 50%;
   top: 120px;
 }
@@ -395,23 +423,183 @@ header nav {
 }
 footer{
   display: flex;
+  justify-content: space-evenly;
    height: 1.2cm;
 align-items: center;
-padding-left: 10px;
+width: 100%;
+ background-color: #5C899D;
+/* padding-left: 10px; */
 }
 #nt{
   position: relative;
-  left: 64rem;
+
 }
-a:hover{
+a:hover , a:active{
   color: var(--secondary-color);
 }
 mark{
    color: var(--secondary-color);
    background-color: #ffffff;
 }
+/*  responsive smart phonne  ___________________________*/
+@media screen and (max-width:576px){
+   body{
+
+     width: 100%;
+     text-align: center;
 
 
+     
+     
+   }
+  #logo{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    gap: 0.1rem;
+    margin: 0 24px;
+  }
+   nav  {
+     
+     width: 100%;
+     overflow: hidden;
+     justify-content: space-around;
+     transition: all 0.4s ease;
+     margin: 0;
+    
+   }
+  
+   .menu1{
+        display:flex  ;
+        flex-direction: column;
+        position: relative;
+         margin: 0%;
+         width: 100%;  
+       padding: 20px ;
+        gap: 0;
+         top: 40px;
+         z-index: 998;
+         transition: all 0.1s ease;
+      
+   }
+   .menu1 li{
+    border: 1px solid #fff;
+    padding: 5px;
 
+    
+   }
+   .section4{
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+   }
+   .cont_moi{
+     display: flex;
+     flex-direction: column;
+      font-size: 1.5rem;
+   }
+   .i2_0{
+     display: flex ; 
+     width: 100%;
+   }
+   .i2_0>  h2{
+    font-size: 2rem;
+   }
+   article>h2{
+    text-wrap: unset;
+    font-size: 1.7rem;
+   }
+   .rec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     flex-wrap: nowrap;
+     max-width: 760px;
+   }
+   .bouton2{
+    padding: 10px 30px; 
+     top: 10px;
+   }
+   .cont4 input , textarea{
+      width: 320px;
+   }
+   .cont4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 50px;
+    }
+   
+   .ma_des p {
+    font-size: 1.6rem;
+     text-align: center;
+   }
+      .ma_des{
+        max-width: 390px;
+      }
+   .moi>p{
+     font-size: 1.6rem;
+      text-wrap: initial;
+   }
+     .tof{
+   max-width: 100px;
+     }
+   .cont3>input{     
+      position:relative ; 
+      right: 20px;
+      width: 3cm;
+      
+     }
+     .cont3{
+      display: flex;
+       justify-content: center;
+        align-items: center;
+     }
+    #section2  ,  #i2_0{
+       height: 140vh;
+    }
+     
+    
+     .art1{
+      height: 6.5cm;
+      width: 290px;
+      margin: 1rem 0 1rem 0 ;}
+      .art1 >p{
+       font-size: 1.6rem;
+      }
+     
 
+    .menu{
+      /* display: block !important ;  */
+      transition: all 1s ease;
+    }
+    
+     .togle{
+   display: inline-block; 
+   padding-right: 7px;
+   position: absolute;
+   right: 0;
+   top: 20px;
+   margin: 0 24px;
+   z-index: 999;
 
+  
+    
+   
+}
+.togle div {
+  background-color: white;
+  height: 5px;
+  width: 40px ; 
+  border-radius: 15px;
+  margin: 8px;
+   transition: all 0.2s ease-in-out;
+ 
+
+ } 
+ 
+  }
+  
